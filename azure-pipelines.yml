@@ -16,6 +16,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    npm install -g @angular/cli@8
     npm install
-    npm run build
+    ng build --output-path="$(Build.BinariesDirectory)\prd" --configuration=internal --base-href=/
   displayName: 'npm install and build'
+  
