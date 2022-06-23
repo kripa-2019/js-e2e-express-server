@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  Kripasbook: SelfHosted
+  name: Kripasbook
+  demands:
+   -agent.name -equals SelfHosted
 
 steps:
 - task: NodeTool@0
