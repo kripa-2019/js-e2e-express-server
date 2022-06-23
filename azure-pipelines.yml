@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  Kripasbook: Selfhosted
+  Kripasbook: SelfHosted
 
 steps:
 - task: NodeTool@0
